@@ -8,6 +8,22 @@ Prequisite for both Hacks Slack GPT and Voice GPT is Open AI API token
 <img width="881" alt="image" src="https://user-images.githubusercontent.com/1044003/230877211-3d09c507-37b4-4502-857e-20c6124e728a.png">
 3. Copy the key 
 
+
+====================================================================================================
+
+## Voice Assistant with Chat GPT
+
+Here, I'm using Google speech Recognition library to detect voice and mpg123 library to play audio 
+1. Execute below commands to install both.   
+pip3 install SpeechRecognition. 
+brew install mpg123  
+
+2. Create a copy of 'voice-gpt.py' and add Open AI secret key in script at below declaration:   
+openai.api_key="### INSERT YOUR OPENAI API KEY ###". 
+
+3. Use below command to activate Voice GPT. When prompted "Say Somethhing!" ask any question and bot will read out answer from Chat GPT response.   
+  python3 /Users/satish/bigdata/chatgpt/voice-gpt.py
+
 ====================================================================================================
 
 ## Slack GPT
@@ -44,19 +60,5 @@ slack_bot_token="### INSERT YOUR SLACK BOT TOKEN ###"
 Use below command to start the Slack Bot:   
 python3 /Users/satish/bigdata/chatgpt/slackbot.py
 
-====================================================================================================
-
-## Voice Assistant with Chat GPT
-
-Here, I'm using Google speech Recognition library to detect voice and mpg123 library to play audio 
-1. Execute below commands to install both.   
-pip3 install SpeechRecognition. 
-brew install mpg123  
-
-2. Create a copy of 'voice-gpt.py' and add Open AI secret key in script at below declaration:   
-openai.api_key="### INSERT YOUR OPENAI API KEY ###". 
-
-3. Use below command to activate Voice GPT. When prompted "Say Somethhing!" ask any question and bot will read out answer from Chat GPT response.   
-  python3 /Users/satish/bigdata/chatgpt/voice-gpt.py
 
 
