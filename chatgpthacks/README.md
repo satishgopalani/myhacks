@@ -34,16 +34,14 @@ Just for a recap: we have created a classic slack app. We have then defined the 
 
 Now, we will move ahead with our python script (slack-gpt.py). The python script will basically read the messages from the slack, send it to Chat GPT and sends back response from Chat GPT to the user.
 
-But before that install slack client library that interfaces with the slack’s Real-Time Messaging (RTM) API using pip.
-
+But before that install slack client library that interfaces with the slack’s Real-Time Messaging (RTM) API using pip.   
 "pip install slackclient"
 
-Now get copy of slack-gpt.py script and add OPENAI API token and Slack Bot token in below lines in script:
-openai.api_key="### INSERT YOUR OPENAI API KEY ###"
+Now get copy of slack-gpt.py script and add OPENAI API token and Slack Bot token in below lines in script:   
+openai.api_key="### INSERT YOUR OPENAI API KEY ###".  
 slack_bot_token="### INSERT YOUR SLACK BOT TOKEN ###"
 
-Use below command to start the Slack Bot:
-
+Use below command to start the Slack Bot:   
 python3 /Users/satish/bigdata/chatgpt/slackbot.py
 
 ====================================================================================================
@@ -51,14 +49,14 @@ python3 /Users/satish/bigdata/chatgpt/slackbot.py
 ## Voice Assistant with Chat GPT
 
 Here, I'm using Google speech Recognition library to detect voice and mpg123 library to play audio 
-1. Execute below commands to install both
-pip3 install SpeechRecognition
-brew install mpg123
+1. Execute below commands to install both.   
+pip3 install SpeechRecognition. 
+brew install mpg123  
 
-2. Create a copy of 'voice-gpt.py' and add Open AI secret key in script at below declaration:
-openai.api_key="### INSERT YOUR OPENAI API KEY ###"
+2. Create a copy of 'voice-gpt.py' and add Open AI secret key in script at below declaration:   
+openai.api_key="### INSERT YOUR OPENAI API KEY ###". 
 
-3. Use below command to activate Voice GPT. When prompted "Say Somethhing!" ask any question and bot will read out answer from Chat GPT response.
-python3 /Users/satish/bigdata/chatgpt/voice-gpt.py
+3. Use below command to activate Voice GPT. When prompted "Say Somethhing!" ask any question and bot will read out answer from Chat GPT response.   
+  python3 /Users/satish/bigdata/chatgpt/voice-gpt.py
 
 
